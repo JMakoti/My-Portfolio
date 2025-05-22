@@ -1,9 +1,61 @@
 import Styles from '../styles/Portfolio.module.css';
+import portLogo from '../assets/pwani.png';
+import movieLogo from '../assets/movie.png';
+import { FaGithub, FaLink } from 'react-icons/fa';
 
 export default function Portfolio() {
   return (
     <div className={Styles.portSection}>
-      <h4 className={Styles.portSectionTitle}>Portfolio</h4>
+      <div className={Styles.portSectionTitle}>
+        <h1 >My Portfolio</h1>
+        <p>Here Are Some Of My Works</p>
+      </div>
+      <div className={Styles.portSectionCards}>
+
+        <div className={Styles.portSectionCard}>
+          <div className={Styles.cardLogo}>
+            <img src={portLogo} alt="Portfolio Logo"></img>
+          </div>
+          <div className={Styles.cardText}>
+            <h4 className={Styles.cardTitle}>Pwani Innovation Week</h4>
+            <span className={Styles.cardSubTitle}>Website</span>
+            <div className={Styles.cardTags}>
+              <span className={Styles.cardTag}>React</span>
+              <span className={Styles.cardTag}>Vercel</span>
+              <span className={Styles.cardTag}>Innovation</span>
+            </div>
+            <p className={Styles.cardDesc}>
+              A fully-featured productivity website developed with React, enabling users to see the event, and book the event. It offers intuitive UI.
+            </p>
+            <div className={Styles.cardBtn}>
+              <a href="#"><FaLink /></a>
+              <a href="#"><FaGithub /></a>
+            </div>
+          </div>
+        </div>
+
+        <div className={Styles.portSectionCard}>
+          <div className={Styles.cardLogo}>
+            <img src={movieLogo} alt="Portfolio Logo"></img>
+          </div>
+          <div className={Styles.cardText}>
+            <h4 className={Styles.cardTitle}>Movie Theather</h4>
+            <span className={Styles.cardSubTitle}>Website</span>
+            <div className={Styles.cardTags}>
+              <span className={Styles.cardTag}>Javascript</span>
+              <span className={Styles.cardTag}>Vercel</span>
+              <span className={Styles.cardTag}>Movies</span>
+            </div>
+            <p className={Styles.cardDesc}>
+              A fully-featured productivity website developed with Vanilla, enabling users to see the movies possters, and search. It offers interactive UI.
+            </p>
+            <div className={Styles.cardBtn}>
+              <a href="#"><FaLink /></a>
+              <a href="#"><FaGithub /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
