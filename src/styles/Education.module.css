@@ -1,7 +1,94 @@
-.eduSection {
+.eduContainer {
     background-color: var(--skin-color);
     color: var(--text-color);
     margin-left: 270px;
-    font-size: 30px;
-    font-weight: 600px;
+    height: 100vh;
+    padding: 30px 20px;
+}
+
+.eduSection {
+    border-radius: 10px;
+    margin-top: 30px;
+    background: transparent;
+
+}
+.eduSectionHeader {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.eduSectionContent {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-right: 20px;
+    border: 1px solid var(--text-color);
+}
+
+.logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.eduSectionDesc {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 12px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+}
+
+.eduSectionTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.eduSectionTitle span {
+
+    font-size: 20px;
+    color: var(--text-color);
+    margin-left: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--main-cl);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    margin-left: 100px;
+
+}
+
+.eduSectionDesc h3 {
+    font-size: 20px;
+    margin-top: 5px;
+    color: var(--text-color);
+    display: flex;
+    gap: 10px;
+
+}
+
+.eduSectionDesc p {
+    font-size: 20px;
+    line-height: 1.5em;
 }
