@@ -1,8 +1,7 @@
-import React from 'react'
-
 import Styles from '../styles/Navbar.module.css';
 import { FaHome, FaUser, FaGraduationCap, FaTools, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
 import profile from '../assets/logo.jpg';
+import { Link } from 'react-router-dom';
 export default function Navbar() {
     return (
         <div>
@@ -18,12 +17,12 @@ export default function Navbar() {
                 </div>
 
                 <div className={Styles.nav}>
-                    <h4> <FaHome /> Home</h4>
-                    <h4> <FaUser /> About</h4>
-                    <h4> <FaGraduationCap /> Education</h4>
-                    <h4> <FaTools /> Skills</h4>
-                    <h4> <FaProjectDiagram /> Projects</h4>
-                    <h4> <FaEnvelope /> Contact</h4>
+                    <Link to="/" className={Styles.link}><h4> <FaHome /> Home</h4></Link>
+                    <Link to="/about"><h4><FaUser /> About</h4></Link>
+                    <Link to="/education"><h4><FaGraduationCap /> Education</h4></Link>
+                    <Link to="/skills"><h4><FaTools /> Skills</h4></Link>
+                    <Link to="/projects"><h4><FaProjectDiagram /> Projects</h4></Link>
+                    <Link to="/contact"><h4><FaEnvelope /> Contact</h4></Link>
                 </div>
             </div>
 
