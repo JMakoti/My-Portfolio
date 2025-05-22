@@ -2,6 +2,66 @@
     background-color: var(--skin-color);
     color: var(--text-color);
     margin-left: 270px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+}
+
+.heroSectionProfile {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--text-color);
+}
+
+.heroSectionProfile img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.heroSectionProfileName {
     font-size: 30px;
-    font-weight: 600px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.heroSectionDescriptions {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.heroSectionDescriptions h2 {
+    margin: 0 10px;
+    border-right: 2px solid var(--text-color);
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.heroSectionDescriptions h2:last-child {
+    border-right: none;
+}
+
+.heroBtns {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    gap: 20px;
+}
+
+.heroBtns .btn {
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var();
+    border: 2px solid var(--text-color);
+    padding: 10px 20px;
+    border-radius: 20px;
 }
