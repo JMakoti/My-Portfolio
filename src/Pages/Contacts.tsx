@@ -1,16 +1,19 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Styles from '../styles/Contact.module.css';
 import { FaPhone, FaLocationDot } from 'react-icons/fa6';
 import { TiMessages } from 'react-icons/ti';
 import { MdContactMail } from 'react-icons/md';
+import emailjs from '@emailjs/browser';
 
 export default function Contacts() {
   const [form, setForm] = useState({
     name: '',
     email: '',
     message: '',
+    time: '',
   });
 
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({
@@ -18,7 +21,33 @@ export default function Contacts() {
       [e.target.name]: e.target.value,
     });
   };
-  const handleSubmit = () => {
+
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setForm((prev) => {
+      const updatedForm = { ...prev, time: new Date().toISOString() };
+      // After state update, send the form
+      setTimeout(() => {
+        emailjs
+          .sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            formRef.current!,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+          )
+          .then(
+            () => {
+              setForm({ name: '', email: '', message: '', time: '' });
+              window.location.reload();
+            },
+            () => {
+              alert('Failed to send message, please try again.');
+            }
+          );
+      }, 0);
+      return updatedForm;
+    });
   };
   return (
     <div className={Styles.contactSection}>
@@ -29,7 +58,7 @@ export default function Contacts() {
       </div>
       <div className={Styles.contactSectionContent}>
         <div className={Styles.contactRight}>
-          <form onSubmit={handleSubmit} className={Styles.form}>
+          <form ref={formRef} onSubmit={handleSubmit} className={Styles.form}>
             <div className={Styles.formGroup}>
               <label htmlFor="name">Name</label>
               <input
@@ -61,6 +90,12 @@ export default function Contacts() {
                 onChange={handleChange}
               />
             </div>
+            {/* Hidden timestamp field */}
+            <input
+              type="hidden"
+              name="timestamp"
+              value={form.time}
+            />
             <button type="submit" className={Styles.submitBtn}>Send</button>
           </form>
         </div>
