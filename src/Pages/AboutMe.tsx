@@ -2,6 +2,7 @@ import { BsGithub } from 'react-icons/bs';
 import Styles from '../styles/AboutMe.module.css';
 import { MdMapsHomeWork } from "react-icons/md";
 import { MdEmail } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 export default function AboutMe() {
     return (
@@ -13,15 +14,15 @@ export default function AboutMe() {
                         <h4><MdMapsHomeWork />Likoni-Mombasa </h4>
                         <h4>
                             <MdEmail />
-                            <a href="mailto:mwamuyejoseph5@gmail.com" className={Styles.link}>
+                            <Link to="mailto:mwamuyejoseph5@gmail.com" className={Styles.link}>
                                 mwamuyejoseph5@gmail.com
-                            </a>
+                            </Link>
                         </h4>
                         <h4>
                             <BsGithub />
-                            <a href="https://github.com/JMakoti" target="_blank" rel="noopener noreferrer" className={Styles.link}>
+                            <Link to="https://github.com/JMakoti" rel="noopener noreferrer" className={Styles.link}>
                                 @JMakoti
-                            </a>
+                            </Link>
                         </h4>
                     </div>
                 </div>

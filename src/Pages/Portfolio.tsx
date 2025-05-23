@@ -2,6 +2,7 @@ import Styles from '../styles/Portfolio.module.css';
 import portLogo from '../assets/pwani.png';
 import movieLogo from '../assets/movie.png';
 import { FaGithub, FaLink } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function Portfolio() {
   return (
@@ -28,8 +29,8 @@ export default function Portfolio() {
               A fully-featured productivity website developed with React, enabling users to see the event, and book the event. It offers intuitive UI.
             </p>
             <div className={Styles.cardBtn}>
-              <a href="#"><FaLink /></a>
-              <a href="#"><FaGithub /></a>
+              <Link to="https://wall-of-developers-git-group2-munubis-projects.vercel.app/"><FaLink /></Link>
+              <Link to="https://github.com/JMakoti/wall-of-developers"><FaGithub /></Link>
             </div>
           </div>
         </div>
@@ -50,8 +51,8 @@ export default function Portfolio() {
               A fully-featured productivity website developed with Vanilla, enabling users to see the movies possters, and search. It offers interactive UI.
             </p>
             <div className={Styles.cardBtn}>
-              <a href="#"><FaLink /></a>
-              <a href="#"><FaGithub /></a>
+              <Link to="https://movie-templete-website.vercel.app/"><FaLink /></Link>
+              <Link to="https://github.com/JMakoti/Movie-Templete-Website"><FaGithub /></Link>
             </div>
           </div>
         </div>

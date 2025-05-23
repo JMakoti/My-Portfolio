@@ -11,14 +11,21 @@ export default function HeroSection() {
             <div className={Styles.heroSectionProfileName}>
                 <h1>I'm Joseph Mwamuye</h1>
                 <div className={Styles.heroSectionDescriptions}>
-                    <h2> Software Engineer</h2>
+                    <h2> Web Designer</h2>
                     <h2> Web Developer</h2>
                     <h2> Mobile Developer</h2>
                 </div>
                 <div className={Styles.heroBtns}>
                     <Link to="/contact" className={Styles.btn}>Contact Me</Link>
-                    <Link to="/contact" className={Styles.btn}>My Projects</Link>
-                    <Link to="/contact" className={Styles.btn}>Download Resume</Link>
+                    <Link to="/projects" className={Styles.btn}>My Projects</Link>
+                    <a
+                        href="/resume.pdf"
+                        className={Styles.btn}
+                        download
+                        rel="noopener noreferrer"
+                    >
+                        Download Resume
+                    </a>
                 </div>
 
             </div>
