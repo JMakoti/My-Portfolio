@@ -1,6 +1,6 @@
 import Styles from '../styles/Navbar.module.css';
 import { FaHome, FaUser, FaGraduationCap, FaTools, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
-import profile from '../assets/logo.jpg';
+import profile from '../assets/logo.jpeg';
 import { Link } from 'react-router-dom';
 export default function Navbar() {
     return (

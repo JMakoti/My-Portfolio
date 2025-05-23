@@ -1,5 +1,5 @@
 import Styles from '../styles/HeroSection.module.css';
-import profile from '../assets/logo.jpg';
+import profile from '../assets/logo.jpeg';
 import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
