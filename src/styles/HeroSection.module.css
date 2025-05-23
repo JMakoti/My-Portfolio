@@ -48,6 +48,10 @@
     border-right: none;
 }
 
+.heroIcons {
+    display: none;
+}
+
 .heroBtns {
     display: flex;
     justify-content: center;
@@ -64,4 +68,77 @@
     border: 2px solid var(--text-color);
     padding: 10px 20px;
     border-radius: 20px;
+}
+
+
+/* MOBILE RWD VIEW */
+@media only screen and (max-width : 600px) {
+    .heroSection {
+        background-color: var(--skin-color);
+        color: var(--text-color);
+        padding: 10px;
+        margin-left: 0;
+        padding-top: 90px;
+    }
+
+    .heroSectionProfile {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid var(--text-color);
+    }
+
+    .heroSectionProfile img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .heroSectionProfileName {
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .heroSectionDescriptions {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+
+    .heroSectionDescriptions h2 {
+        margin: 0 5px;
+        border-right: 2px solid var(--text-color);
+        padding: 0 5px;
+        font-size: 15px;
+    }
+
+    .heroSectionDescriptions h2:last-child {
+        border-right: none;
+    }
+
+    .heroBtns {
+        display: none;
+    }
+
+    .heroIcons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        gap: 20px;
+
+    }
+
+    .heroIcons .btn {
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+
+
 }
