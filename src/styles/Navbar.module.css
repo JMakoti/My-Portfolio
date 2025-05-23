@@ -1,7 +1,6 @@
 .navbar {
     display: block;
     width: 270px;
-    position: absolute;
     background-color: var(--main-bg);
     height: 100vh;
     color: var(--text-color);
@@ -46,4 +45,45 @@
     cursor: pointer;
 
 
+}
+
+
+/* MOBILE RWD VIEW */
+@media only screen and (max-width : 600px) {
+    .navbar {
+        display: block;
+        margin-top: 150px;
+        width: 50px;
+        background-color: var(--main-bg);
+        height: 45vh;
+        color: var(--text-color);
+        padding: 2px;
+        position: fixed;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .navbar .profile {
+        display: none;
+
+    }
+
+    .navbar .nav {
+        margin-top: 20px;
+    }
+
+    .navbar .nav h4 {
+        font-size: 20px;
+        color: var(--text-color);
+        border-bottom: #ec1839 1.5px solid;
+        display: flex;
+        gap: 10px;
+        padding-left: 10px;
+
+    }
+
+    .navbar .nav h4 span {
+        display: none;
+
+    }
 }
