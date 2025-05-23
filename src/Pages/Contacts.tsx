@@ -39,7 +39,7 @@ export default function Contacts() {
           .then(
             () => {
               setForm({ name: '', email: '', message: '', time: '' });
-              window.location.reload();
+              alert('Message sent successfully!');
             },
             () => {
               alert('Failed to send message, please try again.');
