@@ -1,6 +1,6 @@
 import { FaLaptopCode } from 'react-icons/fa6';
 import Styles from '../styles/Skills.module.css';
-import { FaBug, FaCubes, FaGit } from 'react-icons/fa';
+import { FaBug, FaCubes} from 'react-icons/fa';
 import node from '../assets/node.png';
 import mysql from '../assets/mysql.avif';
 import mongodb from '../assets/mongodb.png'
