@@ -117,3 +117,11 @@
     width: 100%;
     object-fit: cover;
 }
+
+
+@media only screen and (max-width : 600px) {
+    .skillSection {
+    margin-left: 0px;
+    height: 100%;
+}
+}
