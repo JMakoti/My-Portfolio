@@ -3,7 +3,7 @@
     color: var(--text-color);
     margin-left: 270px;
     height: 100vh;
-    padding: 30px 20px;
+    padding: 20px;
 
 }
 
@@ -16,16 +16,11 @@
 
 }
 
-.contactSection {
-    background-color: var(--skin-color);
-    color: var(--text-color);
-    margin-left: 270px;
-}
-
 .contactSectionContent {
     display: flex;
     gap: 20px;
     margin-top: 30px;
+    width: 100%;
 }
 
 .contactSectionContent .contactRight {
@@ -97,6 +92,14 @@
     margin-top: 150px;
 }
 
+.contactLeft h2 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    border-left: 2px solid var(--main-bg);
+    padding-left: 20px;
+    color: var(--text-color);
+}
+
 .contactInfo {
     display: flex;
     align-items: center;
@@ -131,4 +134,36 @@
     line-height: 25px;
     color: var(--text-color);
     font-weight: 400;
+}
+
+
+@media only screen and (max-width : 600px) {
+    .contactSection {
+        margin-left: 0;
+        padding: 10px;
+        height: 100vh;
+
+    }
+
+    .contactSectionContent {
+        display: inline-block;
+        gap: 0;
+        margin-top: 5px;
+    }
+
+    .contactSectionContent .contactRight {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0px;
+    }
+
+    .contactLeft {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 10px;
+        margin-top: 0px;
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr); */
+    }
+
 }

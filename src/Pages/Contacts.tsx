@@ -102,6 +102,7 @@ export default function Contacts() {
 
 
         <div className={Styles.contactLeft}>
+          <h2>Or if You Prefer</h2>
           <div>
             <div className={Styles.contactInfo}>
               <a href="tel:+254798995763" className={Styles.icon}>
