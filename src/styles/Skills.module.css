@@ -121,7 +121,7 @@
 
 @media only screen and (max-width : 600px) {
     .skillSection {
-    margin-left: 0px;
-    height: 100%;
-}
+        margin-left: 0px;
+        height: 100%;
+    }
 }
