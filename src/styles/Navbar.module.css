@@ -51,7 +51,8 @@
 /* MOBILE RWD VIEW */
 @media only screen and (max-width : 600px) {
     .navbar {
-        display: block;
+        display: none;
+        /* display: block;
         margin-top: 150px;
         width: 50px;
         background-color: var(--main-bg);
@@ -60,7 +61,7 @@
         padding: 2px;
         position: fixed;
         border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
+        border-top-right-radius: 10px; */
     }
 
     .navbar .profile {

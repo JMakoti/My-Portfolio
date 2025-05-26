@@ -1,7 +1,6 @@
 import Styles from '../styles/HeroSection.module.css';
 import profile from '../assets/logo.jpeg';
 import { Link } from 'react-router-dom';
-import { GrContact } from 'react-icons/gr';
 import { FaDownload, FaFolderOpen, FaPhoneAlt } from 'react-icons/fa';
 
 export default function HeroSection() {
