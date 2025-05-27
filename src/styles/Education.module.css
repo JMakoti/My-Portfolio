@@ -74,7 +74,7 @@
     margin-left: auto;
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: var(--main-cl);
+    background-color: var(--main-bg);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     margin-left: 100px;
 
@@ -95,7 +95,7 @@
 }
 
 /* MOBILE RWD VIEW */
-@media only screen and (max-width : 600px) {
+/* @media only screen and (max-width : 600px) {
     .eduContainer {
         margin-left: 0;
          padding: 15px 10px;
@@ -107,8 +107,8 @@
     }
 
     .logo {
-        width: 65px;
-        height: 65px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
         background-color: #fff;
         display: flex;
@@ -135,24 +135,96 @@
 
     .eduSectionTitle {
         display: inline-block;
+        font-size: 15px;
         gap: 10px;
 
     }
+     .eduSectionTitle h2{
+        font-size: 18px;
+     }
 
     .eduSectionTitle span {
-
-        font-size: 20px;
+        font-size: 16px;
         color: var(--text-color);
         border-radius: 0;
         background-color:transparent;
         box-shadow: none;
         margin-left: 0;
+        margin-top: 10px;
+        text-align: left; 
 
+    }
+    .eduSectionTitle h3{
+        font-size: 12px;
     }
 
     .eduSectionDesc p {
         margin-top: 10px;
     }
 
+
+} */
+
+@media only screen and (max-width : 600px) {
+    .eduContainer {
+        margin-left: 0;
+        padding: 15px 10px;
+    }
+
+    .eduSectionHeader {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .logo {
+        width: 80px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        margin-right: -40px;
+        border: 1px solid var(--text-color);
+    }
+
+    .logo img {
+        min-width: 100%;
+        object-fit: cover;
+    }
+
+
+    .eduSectionTitle {
+        display: block;
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    .eduSectionTitle h2 {
+        font-size: 18px;
+    }
+
+    .eduSectionTitle span {
+        display: block;
+        font-size: 16px;
+        color: var(--text-color);
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none;
+        margin-left: 0;
+        margin-top: 5px;
+        text-align: left;
+        padding: 0;
+    }
+
+    .eduSectionDesc .sch {
+        font-size: 15px;
+    }
+
+    .eduSectionDesc p {
+       font-size: 13px;
+    }
 
 }

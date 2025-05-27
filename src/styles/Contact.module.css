@@ -141,7 +141,7 @@
     .contactSection {
         margin-left: 0;
         padding: 10px;
-        height: 100vh;
+        height: 100%;
 
     }
 
@@ -162,8 +162,7 @@
         max-width: 100%;
         padding: 10px;
         margin-top: 0px;
-        /* display: grid;
-        grid-template-columns: repeat(2, 1fr); */
+        padding-bottom: 70px;
     }
 
 }
