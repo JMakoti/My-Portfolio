@@ -35,8 +35,9 @@ export default function AboutMe() {
                             I thrive in collaborative environments and enjoy working with teams to bring ideas to life.
                             I believe that continuous learning is key to success in the ever-evolving tech industry.
                         </p>
-                        <p className={Styles.aboutSectionText1}>
-                            <span>Career aspirations:</span>
+
+                        <h2 className={Styles.aboutSectionSubtitle}>Career    aspirations:</h2>
+                        <p className={Styles.aboutSectionText}>
                             My goal is to contribute to impactful projects that make a difference in people's lives.
                         </p>
                     </div>
