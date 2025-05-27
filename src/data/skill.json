@@ -1,0 +1,71 @@
+{
+    "services": [
+        {
+            "icon": "FaLaptopCode",
+            "title": "Website design",
+            "description": "I can bring your best ideas into life!"
+        },
+        {
+            "icon": "FaBug",
+            "title": "Code Debbugging",
+            "description": "Uncover, Fix, Improve!"
+        },
+        {
+            "icon": "FaCubes",
+            "title": "App Creation",
+            "description": "I can make creative and innovative apps!"
+        }
+    ],
+    "skills": [
+        {
+            "category": "Backend",
+            "skills": [
+                {
+                    "name": "Node.js",
+                    "icon": "/assets/node.png",
+                    "alt": "nodejs"
+                },
+                {
+                    "name": "MySQL",
+                    "icon": "/assets/mysql.avif",
+                    "alt": "mysql"
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "/assets/mongodb.png",
+                    "alt": "mongodb"
+                },
+                {
+                    "name": "Git",
+                    "icon": "/assets/18133.png",
+                    "alt": "git"
+                }
+            ]
+        },
+        {
+            "category": "Frontend",
+            "skills": [
+                {
+                    "name": "React",
+                    "icon": "/assets/react.png",
+                    "alt": "reactjs"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "/assets/js.png",
+                    "alt": "js"
+                },
+                {
+                    "name": "HTML",
+                    "icon": "/assets/html.jpg",
+                    "alt": "html"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "/assets/css.png",
+                    "alt": "css"
+                }
+            ]
+        }
+    ]
+}
