@@ -1,7 +1,7 @@
 import Styles from '../styles/Portfolio.module.css';
 import portLogo from '../assets/pwani.png';
 import movieLogo from '../assets/movie.png';
-import { FaGithub, FaLink } from 'react-icons/fa';
+import { FaLink } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 export default function Portfolio() {
