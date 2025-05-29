@@ -15,7 +15,7 @@ export default function Portfolio() {
 
         <div className={Styles.portSectionCard}>
           <div className={Styles.cardLogo}>
-            <img src={portLogo} alt="Portfolio Logo"></img>
+            <img src={portLogo} alt="Joseph Mwamuye"></img>
           </div>
           <div className={Styles.cardText}>
             <h4 className={Styles.cardTitle}>Pwani Innovation Week</h4>
