@@ -30,7 +30,7 @@ export default function Portfolio() {
             </p>
             <div className={Styles.cardBtn}>
               <Link to="https://wall-of-developers-git-group2-munubis-projects.vercel.app/"><FaLink /></Link>
-              <Link to="https://github.com/JMakoti/wall-of-developers"><FaGithub /></Link>
+              {/* <Link to="https://github.com/JMakoti/wall-of-developers"><FaGithub /></Link> */}
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ export default function Portfolio() {
             </p>
             <div className={Styles.cardBtn}>
               <Link to="https://movie-templete-website.vercel.app/"><FaLink /></Link>
-              <Link to="https://github.com/JMakoti/Movie-Templete-Website"><FaGithub /></Link>
+              {/* <Link to="https://github.com/JMakoti/Movie-Templete-Website"><FaGithub /></Link> */}
             </div>
           </div>
         </div>
