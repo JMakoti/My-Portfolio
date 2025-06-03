@@ -1,41 +1,94 @@
-Design and develop a personal portfolio website that showcases your professional identity, skills, and work.
-Key Sections to Include: 
+# Personal Portfolio Website
 
-*1. Homepage / Hero Section* 
-* Name and brief tagline 
-* A professional photo 
-* Call to action (e.g., “View My Work”, “Download Resume”).
+A modern, responsive personal portfolio website built with **React (Vite)** to showcase your professional identity, skills, projects, and education.
 
-*2. About Me* 
-* A short bio introducing yourself.
-* Your background (academic or personal).
-* Career aspirations.
+---
 
-*3. Skills* 
-* List of technical and soft skills.
+## 🚀 Features
 
-*4. Projects / Work Experience* 
-* List of projects you have worked on (school, personal, or internship).
+### 1. Homepage / Hero Section
+- Name and brief tagline 
+- A professional photo 
+- Call to action (e.g., “View My Work”, “Download Resume”).
 
-_* Each should include:_
-* Project name
-* Description
-* Technologies used
-* Live link (if deployed) or GitHub link
-* Image/screenshot
+---
 
-*5. Education* 
-* School, college, university attended.
-* Courses or certifications (especially tech-related ones).
+### 2. About Me
+ - Short bio and background
+ - Career aspirations
 
-*6. Contact Section* 
-* Contact form (Name, Email, Message).
-* Email address.
-* Phone number (optional).
-* Location (optional).
-* Social media links (LinkedIn, GitHub, Twitter, etc.)
+---
 
-** Tech Stack*
-* *Frontend:* React (via Vite)
-* *Deployment:* GitHub Pages or Vercel
-* *Version control:* Git + GitHub
+### 3. Skills
+  - List of technical and soft skills
+  - Visual skill cards and icons
+
+---
+
+### 4. Projects / Work Experience
+  - Portfolio of projects with:
+    - Project name, description, technologies used
+    - Live link and/or GitHub link
+    - Image/screenshot
+
+---
+
+### 5. Education
+  - Schools, colleges, or universities attended
+  - Courses or certifications
+
+---
+
+### 6. Contact Section
+ - Contact form (Name, Email, Message)
+  - Email address, phone number (optional), location (optional)
+  - Social media links (LinkedIn, GitHub, Twitter, etc.)
+
+---
+
+### Tech Stack
+
+- **Frontend:** React (Vite)
+- **Styling:** CSS Modules
+- **Icons:** [react-icons](https://react-icons.github.io/react-icons/)
+- **Deployment:** Vercel
+- **Version Control:** Git + GitHub
+- **EmailServices:** EmailJS
+
+### My Project Structure
+
+my-portfolio/
+├── public/
+│   └── assets/                # Images and static assets
+├── src/
+│   ├── components/            # Reusable UI components (Navbar, Footer, etc.)
+│   ├── data/                  # JSON data for skills, projects, etc.
+│   ├── Pages/                 # Main page components (Home, About, Skills,     Projects, Education, Contact)
+│   ├── styles/                # CSS Modules for styling
+│   └── hooks/                 # Custom React hooks
+├──  [package.json](http://_vscodecontentref_/0)
+├──  [README.md](http://_vscodecontentref_/1)
+└──  [vite.config.ts](http://_vscodecontentref_/2)
+
+## 🚀 Getting Started
+
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+2. **Run the development server:**
+   ```sh
+   npm run dev
+   ```
+
+3. **Build for production:**
+   ```sh
+   npm run build
+   ```
+
+4. **Preview the production build:**
+   ```sh
+   npm run preview
+   ```
+
