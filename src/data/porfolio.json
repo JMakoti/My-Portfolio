@@ -1,0 +1,42 @@
+{
+    "projects": [
+        {
+            "title": "Pwani Innovation Week",
+            "category": "Website",
+            "image": "/assets/pwani.png",
+            "tags": [
+                {
+                    "name": "React"
+                },
+                {
+                    "name": "Vercel"
+                },
+                {
+                    "name": "Innovation"
+                }
+            ],
+            "description": " A fully-featured productivity website developed with React, enabling users to see the event, and book the event. It offers intuitive UI.",
+            "link": "https://wall-of-developers-git-group2-munubis-projects.vercel.app/",
+            "github": "#"
+        },
+        {
+            "title": "Movie Theather",
+            "category": "Website",
+            "image": "/assets/movie.png",
+            "tags": [
+                {
+                    "name": "Javascript"
+                },
+                {
+                    "name": "Vercel"
+                },
+                {
+                    "name": "Theather"
+                }
+            ],
+            "description": " A fully-featured productivity website developed with Vanilla, enabling users to see the movies possters, and search. It offers interactive UI.",
+            "link": "https://movie-templete-website.vercel.app/",
+            "github": "#"
+        }
+    ]
+}
