@@ -22,7 +22,7 @@
         {
             "title": "Movie Theather",
             "category": "Website",
-            "image": "/assets/movie.png'",
+            "image": "/assets/movie.png",
             "tags": [
                 {
                     "name": "Javascript"
@@ -35,7 +35,7 @@
                 }
             ],
             "description": " A fully-featured productivity website developed with Vanilla, enabling users to see the movies possters, and search. It offers interactive UI.",
-            "link": "https://wall-of-developers-git-group2-munubis-projects.vercel.app/",
+            "link": "https://movie-templete-website.vercel.app/",
             "github": "#"
         }
     ]
