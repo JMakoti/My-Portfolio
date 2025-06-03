@@ -1,18 +1,43 @@
 import Styles from '../styles/Portfolio.module.css';
 import { FaLink } from 'react-icons/fa';
 import portfolioData from '../data/porfolio.json';
+import { useState } from 'react';
 
+const FILTERS = ['All', 'Apps', 'Website'];
 
 export default function Portfolio() {
+  const [filter, setFilter] = useState('All');
+
+  const filteredProjects = portfolioData.projects.filter(project => {
+    if (filter === 'All') return true;
+    // Make sure category matches filter (case-insensitive)
+    return project.category.toLowerCase() === filter.toLowerCase();
+  });
+
   return (
     <div className={Styles.portSection}>
       <div className={Styles.portSectionTitle}>
         <h1 >My Portfolio</h1>
         <p>Here Are Some Of My Works</p>
       </div>
+
+      {/* //filter buttons */}
+      <div className={Styles.filterBtns}>
+        {FILTERS.map(f => (
+          <button
+            key={f}
+            className={`${Styles.filterBtn} ${filter === f ? Styles.active : ''}`}
+            onClick={() => setFilter(f)}
+          >
+            {f}
+          </button>
+        ))}
+      </div>
+
+        {/* // portfolio cards */}
       <div className={Styles.portSectionCards}>
 
-        {portfolioData.projects.map((project, idx) => (
+        {filteredProjects.map((project, idx) => (
           <div className={Styles.portSectionCard} key={idx}>
             <div className={Styles.cardLogo}>
               <img
