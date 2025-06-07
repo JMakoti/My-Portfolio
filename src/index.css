@@ -5,6 +5,7 @@
     --text-color: white;
     --light-color: rgba(0, 0, 0, 0.342);
     --skin-light: #f24f68;
+    --text-light: #888;
 }
 
 * {

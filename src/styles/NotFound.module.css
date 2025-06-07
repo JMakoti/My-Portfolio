@@ -1,0 +1,41 @@
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: var(--main-bg);
+    color: var(--skin-color);
+}
+
+.notFoundImg {
+    max-width: 320px;
+    margin-bottom: 1.5rem;
+}
+
+.notFoundMsg {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.notFoundBtn {
+    background: var(--skin-color);
+    color: var(--text-color);
+    padding: 0.7rem 2rem;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.notFoundBtn:hover {
+    background: #18191a;
+    color: var(--skin-color);
+}
+
+.notFoundFooter {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
