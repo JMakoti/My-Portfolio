@@ -61,14 +61,19 @@ my-portfolio/
 ├── public/
 │   └── assets/                # Images and static assets
 ├── src/
-│   ├── components/            # Reusable UI components (Navbar, Footer, etc.)
+│   ├── components/            # Reusable UI components (Navbar, etc.)
 │   ├── data/                  # JSON data for skills, projects, etc.
-│   ├── Pages/                 # Main page components (Home, About, Skills,     Projects, Education, Contact)
+│   ├── Pages/                 # Main page components (Home, About, etc.)
 │   ├── styles/                # CSS Modules for styling
 │   └── hooks/                 # Custom React hooks
-├──  [package.json](http://_vscodecontentref_/0)
-├──  [README.md](http://_vscodecontentref_/1)
-└──  [vite.config.ts](http://_vscodecontentref_/2)
+├── App.tsx
+├── main.tsx
+├── index.html
+├── package.json
+├── tsconfig.json
+├── README.md
+├── vercel.json                # <--- This file (for Vercel rewrites)
+└── vite.config.ts
 
 ## 🚀 Getting Started
 

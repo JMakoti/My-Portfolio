@@ -6,7 +6,9 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    height: 100vh;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .heroSectionProfile {
@@ -66,6 +68,13 @@
     border-radius: 20px;
 }
 
+/* Responsive for tablet */
+@media (max-width: 900px) {
+    .heroSection {
+        margin-left: 90px;
+    }
+
+}
 
 /* MOBILE RWD VIEW */
 @media only screen and (max-width : 600px) {
