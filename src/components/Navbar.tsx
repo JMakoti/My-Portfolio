@@ -1,4 +1,4 @@
-import Styles from '../styles/Navbar.module.css';
+import Styles from './Navbar.module.css';
 import { FaHome, FaUser, FaGraduationCap, FaTools, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
 import profile from '../assets/logo.jpeg';
 import { Link } from 'react-router-dom';
