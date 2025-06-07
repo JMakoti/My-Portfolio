@@ -40,8 +40,10 @@
 
 .portSectionCards {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    margin: 2rem 4rem;
+    justify-content: center;
+    width: 100%;
 
 }
 
@@ -50,6 +52,8 @@
     border-radius: 20px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
     width: 450px;
+    max-width: 95vw;
+    margin: 1rem 0;
     padding: 2.5rem 1.5rem 1.5rem 1.5rem;
     display: flex;
     flex-direction: column;
@@ -144,7 +148,19 @@
     color: var(--text-color);
 }
 
+/* Responsive for tablet */
+@media (max-width: 900px) {
+    .portSectionCards {
+        gap: 1.2rem;
+    }
 
+    .portSectionCard {
+        width: 90vw;
+        max-width: 600px;
+    }
+}
+
+/* Responsive for mobile */
 @media only screen and (max-width : 600px) {
     .portSection {
         margin-left: 0px;
@@ -158,16 +174,16 @@
     }
 
     .portSectionCards {
-        display: inline-block;
-        gap: 2rem;
-        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
 
     }
 
     .portSectionCard {
-        width: 320px;
+        width: 90vw;
+        max-width: 90vw;
         padding: 1rem;
-        margin-bottom: 3rem;
 
     }
 
@@ -176,6 +192,12 @@
         width: 75px;
         height: 75px;
 
+    }
+
+    .cardLogo img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .cardTitle {
