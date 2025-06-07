@@ -2,7 +2,9 @@
     background-color: var(--skin-color);
     color: var(--text-color);
     margin-left: 270px;
-    height: 100vh;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
     padding: 30px 20px;
 }
 
@@ -71,6 +73,22 @@
     color: var(--text-color);
 }
 
+/* Responsive for tablet */
+
+@media (max-width: 900px) {
+    .aboutMeContainer {
+        margin-left: 90px;
+    }
+
+    .aboutSectionTitleIcons {
+        gap: 5px;
+        margin: 10px 0;
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+    }
+}
+
+/* Responsive for mobile*/
 
 @media only screen and (max-width : 600px) {
 

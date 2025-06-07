@@ -2,8 +2,10 @@
     background-color: var(--skin-color);
     color: var(--text-color);
     margin-left: 270px;
-    height: 100vh;
+    min-height: 100vh;
     padding: 30px 20px;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .eduSection {
@@ -31,7 +33,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,76 +96,23 @@
     line-height: 1.5em;
 }
 
-/* MOBILE RWD VIEW */
-/* @media only screen and (max-width : 600px) {
+/* Responsive for tablet */
+@media (max-width: 900px) {
     .eduContainer {
-        margin-left: 0;
-         padding: 15px 10px;
+        margin-left: 90px;
     }
 
-    .eduSectionHeader {
-        font-size: 17px;
-        font-weight: 500;
+    .eduSectionContent {
+        gap: 10px;
     }
 
     .logo {
-        width: 70px;
+        width: 80px;
         height: 70px;
-        border-radius: 50%;
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        margin-right: -30px;
-        border: 1px solid var(--text-color);
+        margin-right: -25px;
     }
 
-    .logo img {
-        min-width: 100%;
-        object-fit: cover;
-    }
-
-    .eduSectionDesc {
-        width: 350px;
-        border-radius: 12px;
-        padding: 8px 10px;
-       
-
-    }
-
-    .eduSectionTitle {
-        display: inline-block;
-        font-size: 15px;
-        gap: 10px;
-
-    }
-     .eduSectionTitle h2{
-        font-size: 18px;
-     }
-
-    .eduSectionTitle span {
-        font-size: 16px;
-        color: var(--text-color);
-        border-radius: 0;
-        background-color:transparent;
-        box-shadow: none;
-        margin-left: 0;
-        margin-top: 10px;
-        text-align: left; 
-
-    }
-    .eduSectionTitle h3{
-        font-size: 12px;
-    }
-
-    .eduSectionDesc p {
-        margin-top: 10px;
-    }
-
-
-} */
+}
 
 @media only screen and (max-width : 600px) {
     .eduContainer {
@@ -177,17 +126,9 @@
     }
 
     .logo {
-        width: 80px;
-        height: 70px;
-        border-radius: 50%;
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        margin-right: -40px;
-        border: 1px solid var(--text-color);
+        width: 70px;
+        height: 60px;
+        margin-right: -25px;
     }
 
     .logo img {
@@ -224,7 +165,7 @@
     }
 
     .eduSectionDesc p {
-       font-size: 13px;
+        font-size: 13px;
     }
 
 }

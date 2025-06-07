@@ -2,7 +2,9 @@
     background-color: var(--skin-color);
     color: var(--text-color);
     margin-left: 270px;
-    height: 100vh;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
     padding: 20px 0;
 
 }
@@ -125,6 +127,9 @@
 
 /* Responsive for tablet */
 @media (max-width: 900px) {
+    .contactSection {
+        margin-left: 90px;
+    }
 
     .contactSectionContent {
         display: block;

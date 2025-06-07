@@ -3,7 +3,9 @@
     color: var(--text-color);
     margin-left: 270px;
     padding: 20px;
-    height: 100vh;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .filterBtns {
@@ -150,6 +152,10 @@
 
 /* Responsive for tablet */
 @media (max-width: 900px) {
+    .portSection {
+        margin-left: 90px;
+    }
+
     .portSectionCards {
         gap: 1.2rem;
     }
