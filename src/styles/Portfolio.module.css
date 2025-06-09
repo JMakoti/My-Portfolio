@@ -1,5 +1,5 @@
 .portSection {
-    background-color: var(--skin-color);
+    background: var(--skin-gradient);
     color: var(--text-color);
     margin-left: 270px;
     padding: 20px;
@@ -63,6 +63,7 @@
     color: var(--text-color);
     overflow: visible;
     position: relative;
+    box-shadow: 0 0.5px var(--text-color);
 
 }
 

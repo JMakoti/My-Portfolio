@@ -1,5 +1,6 @@
 :root {
     --skin-color: #ec1839;
+    --skin-gradient: linear-gradient(to bottom, var(--skin-color), #000000);
     --main-cl: rgba(133, 128, 128, 0.425);
     --main-bg: rgba(0, 0, 0, 0.986);
     --text-color: white;
