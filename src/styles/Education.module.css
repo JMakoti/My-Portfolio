@@ -1,5 +1,5 @@
 .eduContainer {
-    background-color: var(--skin-color);
+    background: var(--skin-gradient);
     color: var(--text-color);
     margin-left: 270px;
     min-height: 100vh;
@@ -58,8 +58,9 @@
     justify-content: center;
     align-items: flex-start;
     gap: 16px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); */
+    box-shadow: 0 0.5px var(--text-color);
+    z-index: 999;
 }
 
 .eduSectionTitle {

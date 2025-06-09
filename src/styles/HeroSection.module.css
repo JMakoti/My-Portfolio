@@ -1,5 +1,5 @@
 .heroSection {
-    background-color: var(--skin-color);
+    background: var(--skin-gradient);
     color: var(--text-color);
     margin-left: 270px;
     align-items: center;

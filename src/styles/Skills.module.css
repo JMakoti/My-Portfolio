@@ -1,5 +1,5 @@
 .skillSection {
-    background-color: var(--skin-color);
+    background: var(--skin-gradient);
     color: var(--text-color);
     margin-left: 270px;
     min-height: 100vh;
@@ -33,6 +33,7 @@
     color: var(--text-color);
     text-align: center;
     padding: 20px 15px;
+    box-shadow: 0 0.5px var(--text-color);
 }
 
 .skillIcon {
