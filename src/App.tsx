@@ -8,11 +8,13 @@ import Skills from './Pages/Skills'
 import Portfolio from './Pages/Portfolio'
 import Contacts from './Pages/Contacts'
 import NotFound from './Pages/NotFound'
+import Experience from './Pages/Experience'
 
 const NAVBAR_PATHS = [
   '/',
   '/about',
   '/education',
+  '/experience',
   '/skills',
   '/projects',
   '/contact'
@@ -29,6 +31,7 @@ function App() {
         <Route path='/' element={<HeroSection />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/education" element={<Education />} />
+        <Route path="/experience" element={<Experience />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Portfolio />} />
         <Route path="/contact" element={<Contacts />} />
