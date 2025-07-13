@@ -1,15 +1,25 @@
 import Styles from '../styles/HeroSection.module.css';
 import profile from '../assets/logo.jpeg';
 import { Link } from 'react-router-dom';
-import { FaDownload, FaFolderOpen, FaPhoneAlt } from 'react-icons/fa';
+import { FaDiscord, FaDownload, FaFolderOpen, FaGithub, FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa';
 import useIsMobile from '../hooks/isMobile';
 
 export default function HeroSection() {
     const isMobile = useIsMobile();
     return (
         <div className={Styles.heroSection}>
-            <div className={Styles.heroSectionProfile}>
-                <img src={profile} alt={profile} />
+            <div className={Styles.heroHeader}>
+                <div className={Styles.heroSectionProfile}>
+                    <img src={profile} alt={profile} />
+                </div>
+                <div className={Styles.icon}>
+                    {/* icons */}
+                    <Link className={Styles.cnlink} to="https://linkedin.com/in/mwamuyejoseph"><h4><FaLinkedinIn /></h4></Link>
+                    <Link className={Styles.cnlink} to="https://github.com/JMakoti"><h4><FaGithub /></h4></Link>
+                    <Link className={Styles.cnlink} to=""><h4><FaDiscord /></h4></Link>
+                </div>
+
+                
             </div>
             <div className={Styles.heroSectionProfileName}>
                 <h1>I'm Joseph Mwamuye</h1>
