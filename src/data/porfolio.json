@@ -20,7 +20,7 @@
             "github": "#"
         },
         {
-            "title": "Movie Theather",
+            "title": "CineStream",
             "category": "Website",
             "image": "/assets/movie.png",
             "tags": [
@@ -34,7 +34,7 @@
                     "name": "Theather"
                 }
             ],
-            "description": " A fully-featured productivity website developed with Vanilla, enabling users to see the movies possters, and search. It offers interactive UI.",
+            "description": " A fully-featured productivity website developed with Vanilla, enabling users to see the movies posters, and search. It offers interactive UI.",
             "link": "https://movie-templete-website.vercel.app/",
             "github": "#"
         }

@@ -1,69 +1,122 @@
 {
     "services": [
         {
-            "icon": "FaLaptopCode",
-            "title": "Website design",
+            "icon": "fa-solid fa-laptop-code",
+            "title": "Website design & Development",
             "description": "I can bring your best ideas into life!"
         },
         {
-            "icon": "FaBug",
+            "icon": "fa-solid fa-bug",
             "title": "Code Debbugging",
             "description": "Uncover, Fix, Improve!"
         },
         {
-            "icon": "FaCubes",
+            "icon": "fa-solid fa-mobile-screen-button",
             "title": "App Creation",
             "description": "I can make creative and innovative apps!"
+        },
+        {
+            "icon": "fa-solid fa-window-restore",
+            "title": "REST Apis",
+            "description": "I can build API services!"
         }
     ],
     "skills": [
         {
-            "category": "Backend",
+            "category": "Technical Skills",
             "skills": [
                 {
                     "name": "Node.js",
-                    "icon": "/assets/node.png",
-                    "alt": "nodejs"
+                    "icon": "fa-brands fa-node-js",
+                    "iconColor": {
+                        "bg": "#339933",
+                        "fill": "#EEE"
+                    }
                 },
                 {
                     "name": "MySQL",
-                    "icon": "/assets/mysql.avif",
-                    "alt": "mysql"
+                    "icon": "fa-solid fa-database",
+                    "iconColor": {
+                        "bg": "#4479A1",
+                        "fill": "#EEE"
+                    }
                 },
                 {
                     "name": "MongoDB",
-                    "icon": "/assets/mongodb.png",
-                    "alt": "mongodb"
+                    "icon": "fa-solid fa-server",
+                    "iconColor": {
+                        "bg": "#47A248",
+                        "fill": "#EEE"
+                    }
                 },
                 {
                     "name": "Git",
-                    "icon": "/assets/18133.png",
-                    "alt": "git"
+                    "icon": "fa-brands fa-git",
+                    "iconColor": {
+                        "bg": "#F05032",
+                        "fill": "#111"
+                    }
+                },
+                {
+                    "name": "React",
+                    "icon": "fa-brands fa-react",
+                    "iconColor": {
+                        "bg": "#61DAFB",
+                        "fill": "#111"
+                    }
+                },
+                {
+                    "name": "JavaScript ES6+",
+                    "icon": "fa-brands fa-js",
+                    "iconColor": {
+                        "bg": "#F7DF1E",
+                        "fill": "#111"
+                    }
+                },
+                {
+                    "name": "HTML5",
+                    "icon": "fa-brands fa-html5",
+                    "iconColor": {
+                        "bg": "#E34F26",
+                        "fill": "#EEE"
+                    }
+                },
+                {
+                    "name": "CSS3",
+                    "icon": "fa-brands fa-css3",
+                    "iconColor": {
+                        "bg": "#1572B6",
+                        "fill": "#EEE"
+                    }
                 }
             ]
         },
         {
-            "category": "Frontend",
+            "category": "Soft Skills",
             "skills": [
                 {
-                    "name": "React",
-                    "icon": "/assets/react.png",
-                    "alt": "reactjs"
+                    "name": "Collaboration & Teamwork",
+                    "icon": "fa-solid fa-handshake",
+                    "iconColor": {
+                        "bg": "#E0E0E0",
+                        "fill": "#111"
+                    }
                 },
                 {
-                    "name": "JavaScript",
-                    "icon": "/assets/js.png",
-                    "alt": "js"
+                    "name": "Openminded",
+                    "icon": "fa-solid fa-ear-listen",
+                    "iconColor": {
+                        "bg": "#E0E0E0",
+                        "fill": "#111"
+                    }
                 },
                 {
-                    "name": "HTML",
-                    "icon": "/assets/html.jpg",
-                    "alt": "html"
-                },
-                {
-                    "name": "CSS",
-                    "icon": "/assets/css.png",
-                    "alt": "css"
+                    "name": "Communication",
+                    "icon": "fa-solid fa-comments",
+                    "iconColor": {
+                        "bg": "#E0E0E0",
+                        "fill": "#111"
+                    }
                 }
             ]
         }
