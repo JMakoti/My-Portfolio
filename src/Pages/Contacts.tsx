@@ -60,7 +60,7 @@ export default function Contacts() {
         <div className={Styles.contactRight}>
           <form ref={formRef} onSubmit={handleSubmit} className={Styles.form}>
             <div className={Styles.formGroup}>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Full Names</label>
               <input
                 type="text"
                 id="name"
@@ -130,7 +130,7 @@ export default function Contacts() {
               </a>
               <div className={Styles.info}>
                 <h4>Message</h4>
-                <p>+25498995764</p>
+                <p>+254798995763</p>
               </div>
             </div>
             <div className={Styles.contactInfo}>
@@ -139,7 +139,7 @@ export default function Contacts() {
               </div>
               <div className={Styles.info}>
                 <h4>Location</h4>
-                <p>Kenya</p>
+                <p>Mombasa, Kenya</p>
               </div>
             </div>
           </div>
