@@ -1,5 +1,5 @@
 import Styles from './Navbar.module.css';
-import { FaHome, FaUser, FaGraduationCap, FaTools, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
+import { FaHome, FaUser, FaGraduationCap, FaTools, FaProjectDiagram, FaEnvelope, FaBriefcase, FaLinkedin, FaLinkedinIn, FaGithub, FaDiscord } from 'react-icons/fa';
 import profile from '../assets/logo.jpeg';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -22,20 +22,24 @@ export default function Navbar() {
     return (
         <div>
             <div className={Styles.navbar}>
+
+                {/* Navigation Header */}
                 <div>
                     <div className={Styles.profile}>
                         <img src={profile} alt="profile" />
                     </div>
                     <div className={Styles.icon}>
                         {/* icons */}
-
+                       
                     </div>
                 </div>
 
+                {/* Navigation Body */}
                 <div className={Styles.nav}>
                     <Link to="/" className={Styles.link}><h4> <FaHome /><span>Home</span></h4></Link>
                     <Link to="/about"><h4><FaUser /> <span> About</span></h4></Link>
                     <Link to="/education"><h4><FaGraduationCap />  <span>Education</span></h4></Link>
+                    <Link to="/experience"><h4><FaBriefcase />  <span>Experience</span></h4></Link>
                     <Link to="/skills"><h4><FaTools />  <span>Skills</span></h4></Link>
                     {!isMobile && (
                         <>
@@ -43,6 +47,11 @@ export default function Navbar() {
                             <Link to="/contact"><h4><FaEnvelope />  <span>Contact</span></h4></Link>
                         </>
                     )}
+                </div>
+                {/* Navigation Footer */}
+                <div className={Styles.footer}>
+                    <p>Copyright@2025</p>
+
                 </div>
             </div>
 

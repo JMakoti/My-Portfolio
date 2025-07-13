@@ -46,6 +46,14 @@
 
 
 }
+
+.footer{
+    bottom: 5px;
+    position: fixed;
+    text-align: center;
+    margin-left: 40px;
+
+}
 /* Tablet Responsive Navbar */
 @media (max-width: 900px) and (min-width: 601px) {
     .navbar {
@@ -111,6 +119,10 @@
         font-size: 11px;
         margin-top: 2px;
     }
+    .footer{
+        bottom: 70px;
+     transform: rotate(90deg);
+    }
 }
 
 /* MOBILE RWD VIEW */
@@ -173,5 +185,7 @@
         font-size: 12px;
         margin-top: 2px;
     }
-    
+    .footer{
+        display: none;
+    }
 }
