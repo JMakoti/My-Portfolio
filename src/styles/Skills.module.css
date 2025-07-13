@@ -5,14 +5,15 @@
     min-height: 100vh;
     box-sizing: border-box;
     position: relative;
+
 }
 
 .skillSectionTitle {
     font-size: 20px;
     font-weight: 600;
     color: var(--text-color);
-    margin-bottom: 50px;
     text-align: center;
+    padding: 20px;
 }
 
 .skillCards {
@@ -52,13 +53,13 @@
     background-color: var(--skin-color);
 }
 
-.skillIcon .icon {
-    font-size: 70px;
-    line-height: 60px;
+.skillIcon i {
+    font-size: 40px;
+    line-height: 40px;
     color: var(--text-color);
 }
 
-.skillIcon .icon:hover {
+.skillIcon i:hover {
     font-size: 25px;
     color: var(--text-color);
 }
@@ -87,10 +88,12 @@
 /* code Skills */
 .allSkills {
     padding: 20px 30px;
+    display: flex;
+    gap: 8rem;
 }
 
 .skillSectionSubtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 20px 0;
     border-left: 2px solid var(--main-bg);
     padding-left: 20px;
@@ -98,33 +101,40 @@
 }
 
 .codeGrid {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     gap: 32px;
     margin-top: 24px;
 }
 
 .codeSkill {
+    background: transparent;
+    padding: 0.5rem;
     border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 0.5px var(--text-color);
     display: flex;
+    gap: 30px;
     align-items: center;
+    margin-bottom: 20px;
 }
 
-.codeSkillIcon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
+.codeSkill i {
+    width: 50px;
+    height: 50px;
     background: var(--text-color);
     border-radius: 50%;
     margin-right: 12px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
 }
 
-.codeSkillIcon img {
-    width: 100%;
-    object-fit: cover;
+.codeSkillTitle {
+    font-size: 20px;
+    color: var(--text-color);
 }
 
 /* Responsiveness for Tablet  */
@@ -153,10 +163,14 @@
     }
 
     .codeSkillIcon {
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
     }
 
+    .codeSkill {
+        width: 280px;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width : 600px) {
@@ -174,8 +188,14 @@
         border-radius: 12px;
         display: flex;
         align-items: center;
-        width: 70px;
+        width: 290px;
 
+    }
+
+    .allSkills {
+        padding: 20px 30px;
+        display: block;
+        gap: 8rem;
     }
 
     .codeGrid {
@@ -183,8 +203,8 @@
     }
 
     .codeSkillIcon {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         background: var(--text-color);
         border-radius: 50%;
         overflow: hidden;

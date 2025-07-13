@@ -25,6 +25,7 @@ export default function Skills() {
   const cardCount = serviceData.services.length;
   const intervalRef = useRef<number | null>(null);
 
+
   useEffect(() => {
     if (!isMobile) return;
     intervalRef.current = setInterval(() => {
@@ -39,58 +40,78 @@ export default function Skills() {
     <div className={Styles.skillSection}>
       <div className={Styles.skillSectionTitle}>
         <h1>My Skills Set</h1>
+        <p>My Technical & Soft Skills</p>
       </div>
       <div className={Styles.skillCards}>
         {isMobile
           ? serviceData.services.map((service, idx) => {
-              const Icon = iconMap[service.icon];
-              return (
-                <div
-                  className={Styles.skillCard}
-                  key={idx}
-                  style={{
-                    display: idx === current ? 'block' : 'none',
-                    transition: 'all 0.5s'
-                  }}
-                >
-                  <div className={Styles.skillIcon}>
-                    {Icon && <Icon className={Styles.icon} />}
-                  </div>
-                  <div className={Styles.skillText}>
-                    <h4>{service.title}</h4>
-                    <p>{service.description}</p>
-                  </div>
+            return (
+              <div
+                className={Styles.skillCard}
+                key={idx}
+                style={{
+                  display: idx === current ? 'block' : 'none',
+                  transition: 'all 0.5s'
+                }}
+              >
+                <div className={Styles.skillIcon}>
+                  <i className={`${service.icon}`} ></i>
                 </div>
-              );
-            })
+                <div className={Styles.skillText}>
+                  <h4>{service.title}</h4>
+                  <p>{service.description}</p>
+                </div>
+              </div>
+            );
+          })
           : serviceData.services.map((service, idx) => {
-              const Icon = iconMap[service.icon];
-              return (
-                <div className={Styles.skillCard} key={idx}>
-                  <div className={Styles.skillIcon}>
-                    {Icon && <Icon className={Styles.icon} />}
-                  </div>
-                  <div className={Styles.skillText}>
-                    <h4>{service.title}</h4>
-                    <p>{service.description}</p>
-                  </div>
+            return (
+              <div className={Styles.skillCard} key={idx}>
+                <div className={Styles.skillIcon}>
+                  <i className={`${service.icon}`} ></i>
                 </div>
-              );
-            })}
+                <div className={Styles.skillText}>
+                  <h4>{service.title}</h4>
+                  <p>{service.description}</p>
+                </div>
+              </div>
+            );
+          })}
       </div>
 
       <div className={Styles.allSkills}>
         {serviceData.skills.map((category, idx) => (
-          <div key={idx}>
+          <div key={idx} >
             <h2 className={Styles.skillSectionSubtitle}>{category.category}</h2>
             <div className={Styles.codeGrid}>
               {category.skills.map((skill, i) => (
-                <div className={Styles.codeSkill} key={i}>
-                  <span className={Styles.codeSkillIcon}>
-                    <img src={skill.icon} alt={skill.alt} />
-                  </span>
+                <div
+                  key={i}
+                  className={Styles.codeSkill}
+                >
+                  <i
+                    className={`${skill.icon}`}
+                    style={{
+                      backgroundColor: skill.iconColor.bg,
+                      color: skill.iconColor.fill
+                    }}
+                  ></i>
+                  <h4 className={Styles.codeSkillTitle}>{skill.name}</h4>
                 </div>
               ))}
+
+              {/* {category.skills.map((skill, i) => (
+                <div className={Styles.codeSkill} key={i}>
+                  
+                  <span className={Styles.codeSkillIcon}>
+                    <img src={skill.icon} />
+                  </span>
+                  <h4 className={Styles.codeSkillTitle} >{skill.name}</h4>
+                  <div className={`fa-icon-wrapper d-inline {{Styles.codeSkill}`} style={skill.iconColor.bg}>
+                  <i className={faIconClassList} style={iconStyle}/>
+               
+                </div>
+              ))} */}
             </div>
           </div>
         ))}
